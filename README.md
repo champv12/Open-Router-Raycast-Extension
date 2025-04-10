@@ -1,1 +1,1 @@
-# Open Router API
+# Open Router Raycast Extension
