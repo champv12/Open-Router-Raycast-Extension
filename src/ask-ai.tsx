@@ -1,11 +1,12 @@
-import { LaunchProps, Detail } from "@raycast/api";
+import { Form, Detail, Action, LaunchProps, LocalStorage} from "@raycast/api";
+import { useEffect, useState} from "react";
 
 interface CommandArguments {
-  arguments: {
-    prompt: string; // The "prompt" argument from package.json, type: text, required: true
-  };
+  query: string;
 }
 
 export default function Command(props: LaunchProps<{ arguments: CommandArguments }>) {
+  const { query } = props.arguments;
 
+  return <Detail markdown={`# You entered: ${query}`} />;
 }

@@ -14,8 +14,8 @@
       "mode": "view",
       "arguments": [
         {
-          "name": "prompt",
-          "placeholder": "Prompt",
+          "name": "query",
+          "placeholder": "Enter your query",
           "type": "text",
           "required": true
         }
