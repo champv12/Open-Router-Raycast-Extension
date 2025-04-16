@@ -22,6 +22,15 @@
       ]
     }
   ],
+  "preferences": [
+    {
+      "description": "OpenRouter API Key",
+      "name": "apiKey",
+      "required": true,
+      "title": "API key",
+      "type": "password"
+    }
+  ],
   "dependencies": {
     "@raycast/api": "^1.95.0",
     "@raycast/utils": "^1.17.0"
