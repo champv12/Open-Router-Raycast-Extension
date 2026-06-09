@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "open-router-api",
-  "title": "Open Router API",
-  "description": "",
+  "title": "Open Router Api",
+  "description": "Ask OpenRouter models from Raycast.",
   "icon": "open_router_icon.png",
   "author": "champv_12",
   "license": "MIT",
@@ -10,7 +10,7 @@
     {
       "name": "ask-ai",
       "title": "Ask AI",
-      "description": "",
+      "description": "Send a prompt to your selected OpenRouter model",
       "mode": "view",
       "arguments": [
         {
@@ -29,6 +29,14 @@
       "required": true,
       "title": "API key",
       "type": "password"
+    },
+    {
+      "description": "OpenRouter model ID (for example: openai/gpt-4o-mini)",
+      "name": "model",
+      "required": true,
+      "title": "Model",
+      "type": "textfield",
+      "default": "openai/gpt-4o-mini"
     }
   ],
   "dependencies": {
