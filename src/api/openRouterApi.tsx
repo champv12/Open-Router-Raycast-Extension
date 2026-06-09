@@ -60,7 +60,7 @@ export async function askOpenRouter(options: { apiKey: string; model: string; pr
 
   if (!response.ok) {
     const rawError = await response.text();
-    throw new Error(parseErrorMessage(rawError) || `OpenRouter request failed (${response.status})`);
+    throw new Error(parseErrorMessage(rawError));
   }
 
   const body = (await response.json()) as OpenRouterResponse;
