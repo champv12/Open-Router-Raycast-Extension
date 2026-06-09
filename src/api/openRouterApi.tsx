@@ -43,15 +43,11 @@ function parseErrorMessage(raw: string): string {
   }
 }
 
-export async function askOpenRouter(options: {
-  apiKey: string;
-  model: string;
-  prompt: string;
-}): Promise<string> {
+export async function askOpenRouter(options: { apiKey: string; model: string; prompt: string }): Promise<string> {
   const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST",
     headers: {
-      Authorization: `******
+      Authorization: "Bearer " + options.apiKey,
       "Content-Type": "application/json",
       "HTTP-Referer": "https://www.raycast.com",
       "X-Title": "Open Router Raycast Extension",
